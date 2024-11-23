@@ -1,2 +1,2 @@
-# namegenerator
-Lithuanian name generator
+# Lithuanian name generator
+Website for streamlit app can be found here ...
