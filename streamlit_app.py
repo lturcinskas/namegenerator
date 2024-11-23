@@ -103,8 +103,8 @@ if st.button("Generate name"):
         st.error("Please enter some starting letters.")
     else:
         # Select the appropriate model
-        selected_model = model_man if model_option == "Male name" else model_woman
-        selected_dataset = dataset_man if model_option == "Male name" else dataset_woman
+        selected_model = model_man if model_option == "Male" else model_woman
+        selected_dataset = dataset_man if model_option == "Female" else dataset_woman
 
         result = sample(selected_model, selected_dataset, start_str=input_text, temperature=temperature)
         print(result)
