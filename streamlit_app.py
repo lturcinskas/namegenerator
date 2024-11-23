@@ -106,6 +106,6 @@ if st.button("Generate name"):
         selected_model = model_man if model_option == "Male" else model_woman
         selected_dataset = dataset_man if model_option == "Female" else dataset_woman
 
-        result = sample(selected_model, selected_dataset, start_str=input_text, temperature=temperature)
+        result = sample(selected_model, selected_dataset, start_str=input_text.lower(), temperature=temperature)
         print(result)
         st.success(f"Generated name: {result}")
